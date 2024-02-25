@@ -5,6 +5,15 @@
 Provide a json module that has a `encoding/json` compatible interface that allows you to use a more optimal json on backend such as go-json, sonic, etc
 
 
+# Supported Backends
+
+&nbsp; | encoding/json | Sonic | go-json 
+--- | --- | --- | ---
+AMD64 Support | yes | yes | yes
+ARM64 Support | yes | no | yes
+MarshalIndent | yes | runtime | yes
+
+
 # Example
 
 On amd64 systems, this code will automatically use [Sonic](https://github.com/bytedance/sonic) to parse JSON.  
