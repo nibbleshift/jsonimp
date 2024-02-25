@@ -9,6 +9,8 @@ Provide a json module that has a `encoding/json` compatible interface that allow
 
 &nbsp; | encoding/json | Sonic | go-json 
 --- | --- | --- | ---
+Default on AMD64 | no | yes | no 
+Default on ARM64 | yes | no | no 
 AMD64 Support | yes | yes | yes
 ARM64 Support | yes | no | yes
 MarshalIndent | yes | runtime | yes
