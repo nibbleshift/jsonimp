@@ -6,6 +6,8 @@ Provide a json module that has a `encoding/json` compatible interface that allow
 
 
 # Example
+
+On amd64 systems, this code will automatically use [Sonic](https://github.com/bytedance/sonic) to parse JSON.  
 ```go
 package main
 
@@ -26,3 +28,15 @@ func main() {
 }
 
 ```
+
+
+# TODO
+
+- [ ] Add feature flag for sonic
+- [ ] Add feature flag for go-json
+- [ ] Add feature flag for encoding/json
+- [ ] Add default for amd64 (sonic)
+- [ ] Add default for arm64 (go-json)
+- [ ] Add additional usage documentation
+- [ ] Implement generic tests for all available json implementations.
+- [ ] Implement benchmarks for all available json implementations.
